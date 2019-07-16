@@ -4,12 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GetjsonComponent } from './getjson/getjson.component';
+import { JsonComponent } from './json/json.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetjsonComponent
+    JsonComponent
   ],
   imports: [
     BrowserModule,

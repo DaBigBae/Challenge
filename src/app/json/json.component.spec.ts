@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GetjsonComponent } from './getjson.component';
+import { JsonComponent } from './json.component';
 
-describe('GetjsonComponent', () => {
-  let component: GetjsonComponent;
-  let fixture: ComponentFixture<GetjsonComponent>;
+describe('JsonComponent', () => {
+  let component: JsonComponent;
+  let fixture: ComponentFixture<JsonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GetjsonComponent ]
+      declarations: [ JsonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GetjsonComponent);
+    fixture = TestBed.createComponent(JsonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
