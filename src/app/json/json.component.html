@@ -1,1 +1,22 @@
-<p>json works!</p>
+<div *ngFor="let data of mydatas">
+  <h2>Name: {{data.name}}</h2>
+  <p>Year: {{data.year}}</p>
+
+
+
+  <a href="{{data.trailer}}">video</a>
+  <br>
+  <img src="{{data.poster}}">
+  <p class="e2e-inner-html-interpolated">{{data.trailer}}</p>
+  <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(data.trailer)' width="640" height="360" frameborder="0"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  </iframe>
+</div>
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+</nav>

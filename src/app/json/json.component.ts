@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, PipeTransform, Pipe } from '@angular/core';
+import { ApiService } from '../api.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-json',
@@ -8,10 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class JsonComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  mydatas: any;
+  
+  constructor(private apiServ: ApiService, public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.http.get('https://scotch-mvplayer-api.herokuapp.com/api/v1').subscribe(data => console.log(data));
+    this.apiServ.getData().subscribe((data)=>{
+      console.log(data);
+      this.mydatas = data;
+      console.log(this.mydatas);
+    });
   }
-
 }
