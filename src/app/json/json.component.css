@@ -1,0 +1,23 @@
+.carousel-indicators{
+    bottom: -350px;
+    width: 100%;
+}
+
+.carousel-indicators li{
+    width: 20%;
+    height: auto;
+    text-indent: unset;
+}
+
+span{
+    background-color: black;
+    opacity: 0.8;
+}
+
+a .card-img-overlay{
+    display: none;
+}
+
+a:hover .card-img-overlay{
+    display: initial;
+}
