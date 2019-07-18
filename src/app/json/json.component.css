@@ -3,6 +3,46 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1200px){
+    .carousel-indicators{
+        bottom: -300px;
+    }
+
+    iframe{
+        height: 560px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .carousel-indicators{
+        bottom: -220px;
+    }
+
+    iframe{
+        height: 390px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel-indicators{
+        bottom: -160px;
+    }
+
+    iframe{
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel-indicators{
+        bottom: -170px;
+    }
+
+    iframe{
+        height: 280px;
+    }
+}
+
 .carousel-indicators li{
     width: 20%;
     height: auto;
